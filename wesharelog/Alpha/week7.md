@@ -20,7 +20,7 @@
 
 #### 前端设计--插件
 
-![plugin](week7efc/plugin.JPG)
+![plugin](./week7efc/plugin.JPG)
 
 
 
