@@ -3,7 +3,7 @@
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
 
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
 .mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 h1, h2, h3, h4, h5 { white-space: pre-wrap; }
@@ -205,55 +205,93 @@ mark .md-meta { color: rgb(0, 0, 0); }
 mjx-container { break-inside: avoid; }
 
 
+/* for resume  <-- */
+#write {
+    padding-top: 0px !important;
+    padding-bottom: 20px !important;
+}
+
+content {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+}
+
+a {
+    color: #000;
+}
+
+h1,
+h2 {
+    border-bottom: 1px solid #eee !important;
+    margin-bottom: 3px !important;
+    padding-bottom: 3px !important;
+}
+
+h2 img {
+    width: 16px !important;
+}
+
+h2 {
+    font-size: 17px !important;
+}
+
+p {
+    margin-bottom: 2px !important;
+    margin-top: 2px !important;
+}
+
+ul {
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+}
+
+li p {
+    margin-bottom: 0px !important;
+}
+
+li.md-list-item {
+    line-height: 20px !important;
+}
+
+a {
+    color: #555 !important;
+}
+
+/* for resume --> */
+
 :root {
     --side-bar-bg-color: #fafafa;
     --control-text-color: #777;
 }
 
-@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
 
-/* open-sans-regular - latin-ext_latin */
-  /* open-sans-italic - latin-ext_latin */
-    /* open-sans-700 - latin-ext_latin */
-    /* open-sans-700italic - latin-ext_latin */
-  html {
+html {
     font-size: 16px;
-    -webkit-font-smoothing: antialiased;
 }
 
 body {
-    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.6;
 }
 
 #write {
     max-width: 860px;
-  	margin: 0 auto;
-  	padding: 30px;
+    margin: 0 auto;
+    padding: 30px;
     padding-bottom: 100px;
 }
 
-@media only screen and (min-width: 1400px) {
-	#write {
-		max-width: 1024px;
-	}
-}
-
-@media only screen and (min-width: 1800px) {
-	#write {
-		max-width: 1200px;
-	}
-}
-
-#write > ul:first-child,
-#write > ol:first-child{
+#write>ul:first-child,
+#write>ol:first-child {
     margin-top: 30px;
 }
 
 a {
     color: #4183C4;
 }
+
 h1,
 h2,
 h3,
@@ -267,6 +305,7 @@ h6 {
     line-height: 1.4;
     cursor: text;
 }
+
 h1:hover a.anchor,
 h2:hover a.anchor,
 h3:hover a.anchor,
@@ -275,84 +314,83 @@ h5:hover a.anchor,
 h6:hover a.anchor {
     text-decoration: none;
 }
+
 h1 tt,
 h1 code {
     font-size: inherit;
 }
+
 h2 tt,
 h2 code {
     font-size: inherit;
 }
+
 h3 tt,
 h3 code {
     font-size: inherit;
 }
+
 h4 tt,
 h4 code {
     font-size: inherit;
 }
+
 h5 tt,
 h5 code {
     font-size: inherit;
 }
+
 h6 tt,
 h6 code {
     font-size: inherit;
 }
+
 h1 {
+    padding-bottom: .3em;
     font-size: 2.25em;
     line-height: 1.2;
     border-bottom: 1px solid #eee;
 }
+
 h2 {
+    padding-bottom: .3em;
     font-size: 1.75em;
     line-height: 1.225;
     border-bottom: 1px solid #eee;
 }
 
-/*@media print {
-    .typora-export h1,
-    .typora-export h2 {
-        border-bottom: none;
-        padding-bottom: initial;
-    }
-
-    .typora-export h1::after,
-    .typora-export h2::after {
-        content: "";
-        display: block;
-        height: 100px;
-        margin-top: -96px;
-        border-top: 1px solid #eee;
-    }
-}*/
-
 h3 {
     font-size: 1.5em;
     line-height: 1.43;
 }
+
 h4 {
     font-size: 1.25em;
 }
+
 h5 {
     font-size: 1em;
 }
+
 h6 {
-   font-size: 1em;
+    font-size: 1em;
     color: #777;
 }
+
 p,
 blockquote,
 ul,
 ol,
 dl,
-table{
+table {
     margin: 0.8em 0;
 }
+
 li>ol,
 li>ul {
     margin: 0 0;
 }
+
 hr {
     height: 2px;
     padding: 0;
@@ -366,57 +404,71 @@ hr {
 li p.first {
     display: inline-block;
 }
+
 ul,
 ol {
     padding-left: 30px;
 }
+
 ul:first-child,
 ol:first-child {
     margin-top: 0;
 }
+
 ul:last-child,
 ol:last-child {
     margin-bottom: 0;
 }
+
 blockquote {
     border-left: 4px solid #dfe2e5;
     padding: 0 15px;
     color: #777777;
 }
+
 blockquote blockquote {
     padding-right: 0;
 }
+
 table {
     padding: 0;
     word-break: initial;
 }
+
 table tr {
-    border: 1px solid #dfe2e5;
+    border-top: 1px solid #dfe2e5;
     margin: 0;
     padding: 0;
 }
+
 table tr:nth-child(2n),
 thead {
     background-color: #f8f8f8;
 }
-table th {
+
+table tr th {
     font-weight: bold;
     border: 1px solid #dfe2e5;
     border-bottom: 0;
+    text-align: left;
     margin: 0;
     padding: 6px 13px;
 }
-table td {
+
+table tr td {
     border: 1px solid #dfe2e5;
+    text-align: left;
     margin: 0;
     padding: 6px 13px;
 }
-table th:first-child,
-table td:first-child {
+
+table tr th:first-child,
+table tr td:first-child {
     margin-top: 0;
 }
-table th:last-child,
-table td:last-child {
+
+table tr th:last-child,
+table tr td:last-child {
     margin-bottom: 0;
 }
 
@@ -425,7 +477,7 @@ table td:last-child {
 }
 
 .code-tooltip {
-    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    box-shadow: 0 1px 1px 0 rgba(0, 28, 36, .3);
     border-top: 1px solid #eef2f2;
 }
 
@@ -453,25 +505,31 @@ code {
 }
 
 
-.md-task-list-item > input {
-  margin-left: -1.3em;
+.md-task-list-item>input {
+    margin-left: -1.3em;
 }
 
 @media print {
     html {
         font-size: 13px;
     }
+
+    table,
     pre {
         page-break-inside: avoid;
+    }
+
+    pre {
         word-wrap: break-word;
     }
 }
 
 .md-fences {
-	background-color: #f8f8f8;
+    background-color: #f8f8f8;
 }
+
 #write pre.md-meta-block {
-	padding: 1rem;
+    padding: 1rem;
     font-size: 85%;
     line-height: 1.45;
     background-color: #f7f7f7;
@@ -482,29 +540,33 @@ code {
 }
 
 .mathjax-block>.code-tooltip {
-	bottom: .375rem;
+    bottom: .375rem;
 }
 
 .md-mathjax-midline {
     background: #fafafa;
 }
 
-#write>h3.md-focus:before{
-	left: -1.5625rem;
-	top: .375rem;
+#write>h3.md-focus:before {
+    left: -1.5625rem;
+    top: .375rem;
 }
-#write>h4.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
+
+#write>h4.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
 }
-#write>h5.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
+
+#write>h5.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
 }
-#write>h6.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
+
+#write>h6.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
 }
+
 .md-image>.md-meta {
     /*border: 1px solid #ddd;*/
     border-radius: 3px;
@@ -518,9 +580,9 @@ code {
     opacity: 1;
 }
 
-.md-toc { 
-    margin-top:20px;
-    padding-bottom:20px;
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .sidebar-tabs {
@@ -544,12 +606,15 @@ code {
     border-left-color: rgba(85, 85, 85, 0.12);
 }
 
-header, .context-menu, .megamenu-content, footer{
+header,
+.context-menu,
+.megamenu-content,
+footer {
     font-family: "Segoe UI", "Arial", sans-serif;
 }
 
 .file-node-content:hover .file-node-icon,
-.file-node-content:hover .file-node-open-state{
+.file-node-content:hover .file-node-open-state {
     visibility: visible;
 }
 
@@ -562,9 +627,9 @@ header, .context-menu, .megamenu-content, footer{
     color: #b4654d;
 }
 
-/*.html-for-mac {
+.html-for-mac .context-menu {
     --item-hover-bg-color: #E6F0FE;
-}*/
+}
 
 #md-notification .btn {
     border: 0;
@@ -572,28 +637,13 @@ header, .context-menu, .megamenu-content, footer{
 
 .dropdown-menu .divider {
     border-color: #e5e5e5;
-    opacity: 0.4;
 }
-
-.ty-preferences .window-content {
-    background-color: #fafafa;
-}
-
-.ty-preferences .nav-group-item.active {
-    color: white;
-    background: #999;
-}
-
-.menu-item-container a.menu-style-btn {
-    background-color: #f5f8fa;
-    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
-}
-
 
 
 </style><title>content</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h2 id='weshare项目'><span>WESHARE项目</span></h2><h1 id='alpha阶段冲刺'><span>ALPHA阶段冲刺</span></h1><h3 id='一scrum-meeting'><span>一、Scrum Meeting</span></h3><p><span>	</span><span>1.</span><a href='./week6.html'><span>第六周会议记录</span></a></p><p><span>	</span><span>2.</span><a href='./week7.html'><span>第七周会议记录</span></a></p><h3 id='二测试报告'><span>二、测试报告</span></h3><p><span>	</span><a href='./alphaTesting.html'><span>Alpha阶段测试报告</span></a></p><h3 id='三习得的软工原理方法技能'><span>三、习得的软工原理/方法/技能</span></h3><p><span>	</span></p></div></div>
+<div id='write'  class=''><h2 id='weshare项目'><span>WESHARE项目</span></h2><h1 id='alpha阶段冲刺'><span>ALPHA阶段冲刺</span></h1><h3 id='一scrum-meeting'><span>一、Scrum Meeting</span></h3><p><span>	</span><span>1.</span><a href='./week6.html'><span>第六周会议记录</span></a></p><p><span>	</span><span>2.</span><a href='./week7.html'><span>第七周会议记录</span></a></p><h3 id='二测试报告'><span>二、测试报告</span></h3><p><span>	</span><a href='./alphaTesting.html'><span>Alpha阶段测试报告</span></a></p><h3 id='三习得的软工原理方法技能'><span>三、习得的软工原理/方法/技能</span></h3><ul><li><p><span>洪曹奕:</span></p><p><span>通过本次迭代，学习到了如何进行需求的分析，用清晰的对问题的理解满足顾客的需要，给出系统使用环境和上下文。学习到了如何通过类似焦点小组等方式获得需求。学习了如何从总体角度，系统化地使用图标对软件进行设计，采取不同的模式。尝试使用了管理者模式与工厂模式在实际的开发应用之中。</span></p></li><li><p><span>刘家诚</span></p><p><span>在项目测试中，我使用了不同的测试方法来确保插件的质量。例如，使用单元测试来测试插件的各个部分是否按预期工作，其次还使用集成测试来测试插件与其他应用程序的兼容性。最后，通过使用系统测试来测试插件是否满足用户需求。这些测试方法帮助我们发现和修复插件中的错误，从而提高插件的质量和可靠性。</span></p></li><li><p><span>余会涛</span></p><p><span>首先是开发前的需求分析，其次是在具体实现过程中进行模块化与组件化设计，将网站功能划分为模块或组件，以便于维护、扩展和重用代码。使用模块化设计可以使代码更清晰、结构更灵活。以及基本的版本控制方法，采用版本控制系统（如Git），能够跟踪代码变更、协作开发，同时也有助于备份和管理不同版本的代码。总体开发框架采用敏捷开发方法Scrum，可以让开发团队更灵活地响应需求变化，以迭代的方式持续交付价值。</span></p></li><li><p><span>李俊义</span></p><p><span>软件测试：检查和验证的开发的系统是否符合客户期望，主要包括单元测试、子系统测试、集成测试和验收测试等活动</span>
+<span>迭代式开发：将描述、开发和验证等不同活动交织在一起，在开发过程中 建立一系列版本,将系统一部分一部分地逐步交付。</span></p></li><li><p><span>刘思凯</span></p><p><span>在本次软件开发中，我学到了许多关于后端的知识。在这之前，我对于真实的软件开发还带有许多的未知，虽然已经是大三了，但我还不知道我所学的内容如何与真实的软件开发对接，但在本次任务中，我发现了不论是计网，数据库概论对于所学的内容都有极大的帮助，而从0开始学的java,spring security,mybaits等许多软件开发软件都极大与从前所学内容联系了起来。</span></p><p>&nbsp;</p></li></ul></div></div>
 </body>
 </html>
