@@ -8,6 +8,10 @@
 
 [Alpha迭代](wesharelog/Alpha/content.html)
 
+[Beta迭代](wesharelog/Beta/content.html)
+
+
+
 
 
 ### 项目仓库
