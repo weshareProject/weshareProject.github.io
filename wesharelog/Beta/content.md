@@ -1,6 +1,6 @@
 ## WESHARE项目
 
-# ALPHA阶段冲刺
+# Beta阶段冲刺
 
 ### 一、Scrum Meeting
 
