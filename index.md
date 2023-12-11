@@ -10,7 +10,7 @@
 
 [Beta迭代](wesharelog/Beta/content.html)
 
-
+[Gama迭代](wesharelog/Gama/content.html)
 
 
 
