@@ -10,7 +10,7 @@
 
 ### 二、测试报告
 
-​	[Gama阶段测试报告](./gamaTesting.html)
+​	[Gama阶段测试报告](./gamaTesting.pdf)
 
 ### 三、习得的软工原理/方法/技能
 

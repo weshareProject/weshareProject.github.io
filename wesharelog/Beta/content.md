@@ -10,7 +10,7 @@
 
 ### 二、测试报告
 
-​	[Beta阶段测试报告](./betaTesting.html)
+​	[Beta阶段测试报告](./betaTesting.pdf)
 
 ### 三、习得的软工原理/方法/技能
 
